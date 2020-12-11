@@ -1,24 +1,22 @@
 {
-  "name": "googlebookssearch",
+  "name": "google-book-search",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm install && npm run build",
-    "heroku-postbuild": "npm install && npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vickmeister/Google-Books-Search.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.21.0",
-    "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.11.4",
-    "react-router-dom": "^5.2.0"
-  }
+  "bugs": {
+    "url": "https://github.com/Vickmeister/Google-Books-Search/issues"
+  },
+  "homepage": "https://github.com/Vickmeister/Google-Books-Search#readme"
 }

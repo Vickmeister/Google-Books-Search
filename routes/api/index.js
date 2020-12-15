@@ -1,16 +1,17 @@
-const router = require('express').Router();
-const userRoutes = require('./user-routes');
+// const router = require('express').Router();
+// const userRoutes = require('./user-routes');
 
-router.use('/users', userRoutes);
-
-module.exports = router;
-
-
-// const router = require("express").Router();
-// const bookRoutes = require("./books");
-
-// router.use("/books", bookRoutes);
-
-// router.use(function(req, res) {  res.sendFile(path.join(__dirname, "../../client/build/index.html"));});
+// router.use('/users', userRoutes);
 
 // module.exports = router;
+
+
+const router = require("express").Router();
+const bookRoutes = require("./books");
+
+router.use("/books", bookRoutes);
+
+router.use(function(req, res) {  res.sendFile(path.join(__dirname, "../../client/build/index.html"));});
+
+module.exports = router;
+//test
